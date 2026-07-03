@@ -106,9 +106,7 @@ EchoTravels/
 - Search & Filter Packages
 - Booking History
 - Wishlist Feature
-
----
-
+  
 # 👩‍💻 Developed By
 
 BAKKA RUPASRI
