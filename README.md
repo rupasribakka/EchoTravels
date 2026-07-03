@@ -134,9 +134,3 @@ EchoTravels/
 ⭐ **If you like this project, don't forget to give it a Star!**
 
 ---
-
-<p align="center">
-
-⭐ If you like this project, don't forget to Star the repository!
-
-</p>
