@@ -13,9 +13,6 @@
 <p align="center">
 A modern, responsive and visually appealing Tour & Travel Agency website built using HTML, CSS and JavaScript.
 </p>
-
----
-
 # ✨ Features
 
 - 🌍 Responsive Travel Website
@@ -98,8 +95,6 @@ EchoTravels/
 ## 💻 GitHub Repository
 
 👉 **[View Source Code](https://github.com/rupasribakka/EchoTravels)**
-
----
 
 # 🚀 Future Enhancements
 
