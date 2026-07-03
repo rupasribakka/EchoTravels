@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tour and Travel Agency</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- Auth Modal -->
+<div id="authModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+
+    <!-- Login Form -->
+<form id="loginForm" class="auth-form">
+  <h2>Login</h2>
+
+  <input type="email" name="email" placeholder="Email" required />
+  <input type="password" name="password" placeholder="Password" required />
+
+  <button type="submit">Login</button>
+
+  <p>
+  Don't have an account?
+  <a href="#" onclick="toggleForm('register'); return false;">Register</a>
+</p>
+</form>
+
+<!-- Register Form -->
+<form id="registerForm" class="auth-form">
+  <h2>Register</h2>
+
+  <input type="text" name="name" placeholder="Full Name" required />
+  <input type="email" name="email" placeholder="Email" required />
+  <input type="password" name="password" placeholder="Password" required />
+
+  <button type="submit">Register</button>
+
+  <p>
+  Already have an account?
+  <a href="#" onclick="toggleForm('login'); return false;">Login</a>
+</p>
+</form>
+
+    <div id="authMessage" class="auth-message"></div>
+  </div>
+</div>
+<!-- Book Now Modal -->
+<div id="bookNowModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeBookModal()">&times;</span>
+    <form id="bookForm">
+      <h2>Book Your Package</h2>
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Email Address" required />
+      <input type="text" name="destination" placeholder="Destination" required />
+      <label for="travel-date">Travel Date</label>
+<input
+    type="date"
+    id="travel-date"
+    name="date"
+    required
+>
+      <textarea name="message" placeholder="Additional Notes" rows="4"></textarea>
+      <button type="submit">Confirm Booking</button>
+    </form>
+    <div id="bookMessage" class="auth-message"></div>
+  </div>
+</div>
+  <!-- Header -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+      <img src="https://tse4.mm.bing.net/th?id=OIP.GAg9-rU_iRLD0qRK70GP2wHaHa&pid=Api&P=0&h=180" alt="Traveller Logo" />
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li class="dropdown">
+        <a href="#packages" class="dropbtn">Packages</a>
+      <div class="dropdown-content">
+        <a href="#beaches">Beach Destinations</a>
+        <a href="#cultural">Spiritual Destinations</a>
+        <a href="#cities">City Destinations</a>
+      </div>
+     </li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Login/Register Buttons -->
+  <div class="auth-buttons">
+    <button onclick="openModal('login')">Login</button>
+    <button onclick="openModal('register')">Register</button>
+  </div>
+
+  <!-- Hero Section -->
+<section id="home" class="hero">
+  <div class="hero-overlay">
+    <div class="hero-content">
+      <h1>Welcome to EchoTravels</h1>
+      <p>“Your gateway to unforgettable travel experiences.”</p>
+      <div class="cta-buttons">
+  <button onclick="document.getElementById('beaches').scrollIntoView({ behavior: 'smooth' });">Explore Tours</button>
+  <button onclick="alert('Go to your destination packages and select your destination and click Book Now.')">Book Now</button>
+</div>
+  </div>
+</section>
+
+
+  <!-- About Us -->
+  <section id="about" class="info-section">
+    <h2>About Us</h2>
+    <p>Our Travel Agency is your trusted partner in planning the perfect vacation. With years of experience, we help travelers explore the world with comfort, safety, and unforgettable experiences.</p>
+  </section>
+
+  <!-- Special Packages -->
+<section id="beaches" class="services">
+  <h2>Beach Destinations</h2>
+  <div class="cards">
+    <div class="card">
+      <img src="images/maldives.jpg" alt="Maldives">
+      <h3>Maldives</h3>
+      <p>"Unwind in overwater villas surrounded by crystal-clear waters."</p>
+      <p><strong>Price:</strong> ₹1,20,000</p>
+      <p><strong>Duration:</strong> 5 Nights / 6 Days</p>
+      <button class="book-btn">Book Now</button>
+    </div>
+
+    <div class="card">
+      <img src="images/bali.jpg" alt="Bali, Indonesia">
+      <h3>Bali, Indonesia</h3>
+      <p>"Tropical waves, tranquil vibes — discover Bali’s beach bliss."</p>
+      <p><strong>Price:</strong> ₹95,000</p>
+      <p><strong>Duration:</strong> 6 Nights / 7 Days</p>
+      <button class="book-btn">Book Now</button>
+    </div>
+
+    <div class="card">
+      <img src="images/goa.jpg" alt="Goa, India">
+      <h3>Goa, India</h3>
+      <p>"Sun, sand, and a dash of spice — Goa’s beaches are calling!"</p>
+      <p><strong>Price:</strong> ₹25,000</p>
+      <p><strong>Duration:</strong> 3 Nights / 4 Days</p>
+      <button class="book-btn">Book Now</button>
+    </div>
+
+    <div class="card">
+      <img src="images/phuket.jpg" alt="Phuket, Thailand">
+      <h3>Phuket, Thailand</h3>
+      <p>"Golden shores and vibrant nightlife await you in Phuket."</p>
+      <p><strong>Price:</strong> ₹88,000</p>
+      <p><strong>Duration:</strong> 4 Nights / 5 Days</p>
+      <button class="book-btn">Book Now</button>
+    </div>
+  </div>
+</section>
+
+<!-- Cultural and Spiritual Destinations -->
+<section id="cultural" class="services">
+  <h2>Cultural & Spiritual Destinations</h2>
+  <div class="cards">
+    <div class="card">
+      <img src="images/kedarnath.jpg" alt="Kedarnath">
+      <h3>Kedarnath, Uttarakhand</h3>
+      <p>"High in the Himalayas lies one of India's most sacred Shiva temples — a divine journey of faith."</p>
+      <p><strong>Price:</strong> ₹35,000</p>
+      <p><strong>Duration:</strong> 4 Nights / 5 Days</p>
+      <button class="book-btn">Book Now</button>
+    </div>
+
+    <div class="card">
+    <img src="images/vrindavan.jpg" alt="Vrindavan">
+    <h3>Vrindavan, Uttar Pradesh</h3>
+    <p>"Immerse yourself in the land of Krishna — a town rich in devotion, music, and timeless temples."</p>
+    <p><strong>Price:</strong> ₹22,000</p>
+    <p><strong>Duration:</strong> 3 Nights / 4 Days</p>
+    <button class="book-btn">Book Now</button>
+    </div>
+
+    <div class="card">
+      <img src="images/shirdi.jpg" alt="Shirdi, Maharashtra">
+      <h3>Shirdi, Maharashtra</h3>
+      <p>"Seek blessings at the holy shrine of Sai Baba – a symbol of faith and patience."</p>
+      <p><strong>Price:</strong> ₹18,000</p>
+      <p><strong>Duration:</strong> 2 Nights / 3 Days</p>
+      <button class="book-btn">Book Now</button>
+    </div>
+
+    <div class="card">
+      <img src="images/amritsar.jpg" alt="Amritsar, Punjab">
+      <h3>Amritsar, Punjab</h3>
+      <p>"Feel peace and devotion at the Golden Temple."</p>
+      <p><strong>Price:</strong> ₹20,000</p>
+      <p><strong>Duration:</strong> 3 Nights / 4 Days</p>
+      <button class="book-btn">Book Now</button>
+    </div>
+  </div>
+</section>
+
+<!-- City Destinations -->
+<section id="cities" class="services">
+  <h2>City Destinations</h2>
+  <div class="cards">
+    <div class="card">
+      <img src="images/paris.jpg" alt="Paris">
+      <h3>Paris, France</h3>
+      <p>"Discover the City of Lights — from Eiffel Tower to Seine river cruises."</p>
+      <p><strong>Price:</strong> ₹1,50,000</p>
+      <p><strong>Duration:</strong> 5 Nights / 6 Days</p>
+      <button class="book-btn">Book Now</button>
+    </div>
+
+    <div class="card">
+      <img src="images/newyork.jpg" alt="New York">
+      <h3>New York, USA</h3>
+      <p>"From Times Square to Central Park — experience the buzz of NYC."</p>
+      <p><strong>Price:</strong> ₹1,80,000</p>
+      <p><strong>Duration:</strong> 6 Nights / 7 Days</p>
+      <button class="book-btn">Book Now</button>
+    </div>
+
+    <div class="card">
+      <img src="images/tokyo.jpg" alt="Tokyo">
+      <h3>Tokyo, Japan</h3>
+      <p>"Anime culture, sushi tours, cherry blossom viewing."</p>
+      <p><strong>Price:</strong> ₹95,000</p>
+      <p><strong>Duration:</strong> 4 Nights / 5 Days</p>
+      <button class="book-btn">Book Now</button>
+    </div>
+
+    <div class="card">
+      <img src="images/singapore.jpg" alt="Singapore">
+      <h3>Singapore</h3>
+      <p>"Clean, green, and dazzlingly modern — a perfect urban escape."</p>
+      <p><strong>Price:</strong> ₹1,10,000</p>
+      <p><strong>Duration:</strong> 5 Nights / 6 Days</p>
+      <button class="book-btn">Book Now</button>
+    </div>
+  </div>
+</section>
+
+  <!-- Services -->
+<section id="services" class="services">
+  <h2>Our Services</h2>
+  <div class="cards">
+    <div class="card">
+      <img src="images/flight.jpg" alt="Flight Booking" />
+      <h3>Flight Booking</h3>
+    </div>
+    <div class="card">
+      <img src="images/hotel.jpg" alt="Hotel Reservations" />
+      <h3>Hotel Reservations</h3>
+    </div>
+    <div class="card">
+      <img src="images/visa.jpg" alt="Visa Assistance" />
+      <h3>Visa Assistance</h3>
+    </div>
+    <div class="card">
+      <img src="images/Tour-Guide.jpg" alt="Tour Guides" />
+      <h3>Tour Guides</h3>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section id="testimonials" class="testimonials">
+  <h2>What Our Travelers Say</h2>
+  <div class="testimonial-cards">
+    <div class="testimonial-card">
+  <img src="images/kajal.jpg" alt="Kajal Aggarwal">
+  <h3>Kajal Aggarwal</h3>
+  <p>“EchoTravels made my dream vacation come true! The arrangements were flawless and luxurious. Highly recommended!”</p>
+</div>
+
+    <div class="testimonial-card">
+      <img src="images/rohit.jpg" alt="Rohit">
+      <h3>Rohit</h3>
+      <p>“The Bali trip was magical! The itinerary was perfect, and everything was super smooth. 10/10 service!”</p>
+    </div>
+
+    <div class="testimonial-card">
+      <img src="images/rashmika.jpg" alt="Rashmika Mandanna">
+      <h3>Rashmika Mandana</h3>
+      <p>“The Maldives exceeded all my expectations — stunning beaches, crystal-clear waters, and total relaxation. An unforgettable trip!”</p>
+    </div>
+
+    <div class="testimonial-card">
+      <img src="images/prabhas.jpg" alt="Prabhas">
+      <h3>Prabhas</h3>
+      <p>“Visiting Vrindavan was a life-changing experience. The spiritual energy, temple chants, and warmth of the people made my journey unforgettable. Truly divine!”</p>
+    </div>
+  </div>
+</section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2>Contact EchoTravels</h2>
+    <form id="contact-form">
+      <input type="text" id="name" name="name" placeholder="Your Name" required />
+      <input type="email" id="email" name="email" placeholder="Your Email" required />
+      <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p id="form-response"></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Tour & Travel Agency. All rights reserved.</p>
+  </footer>
+
+  <!-- Modal for Login/Register -->
+  <div id="authModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+
+      <!-- Login -->
+      <form id="login-form" class="auth-form" onsubmit="return login(event)">
+        <h2>Login</h2>
+        <input type="text" id="login-username" placeholder="Username" required />
+        <input type="password" id="login-password" placeholder="Password" required />
+        <button type="submit">Login</button>
+      </form>
+
+      <!-- Register -->
+      <form id="register-form" class="auth-form" onsubmit="return register(event)">
+        <h2>Register</h2>
+        <input type="text" id="register-username" placeholder="Username" required />
+        <input type="email" id="register-email" placeholder="Email" required />
+        <input type="password" id="register-password" placeholder="Password" required />
+        <button type="submit">Register</button>
+      </form>
+
+      <p id="auth-message" class="auth-message"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>          
