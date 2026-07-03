@@ -116,7 +116,7 @@ EchoTravels/
 
 # 👩‍💻 Developed By
 
-** Bakka RupaSri**
+BAKKA RUPASRI
 
 🎓 B.Tech Computer Science & Engineering  
 (Cybersecurity, IoT & Blockchain)
