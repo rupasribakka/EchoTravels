@@ -91,17 +91,13 @@ EchoTravels/
 
 ---
 
-# 🚀 Live Demo
+## 🚀 Live Demo
 
-🔗 **Website**
+👉 **[View Live Website](https://rupasribakka.github.io/EchoTravels/)**
 
-https://YOUR_USERNAME.github.io/EchoTravels/
+## 💻 GitHub Repository
 
----
-
-# 💻 GitHub Repository
-
-https://github.com/YOUR_USERNAME/EchoTravels
+👉 **[View Source Code](https://github.com/rupasribakka/EchoTravels)**
 
 ---
 
@@ -125,11 +121,17 @@ https://github.com/YOUR_USERNAME/EchoTravels
 🎓 B.Tech Computer Science & Engineering  
 (Cybersecurity, IoT & Blockchain)
 
-🔗 LinkedIn  
-https://linkedin.com/in/YOUR_LINKEDIN
+---
 
-🐙 GitHub  
-https://github.com/YOUR_USERNAME
+## 👩‍💻 Connect with Me
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Rupa%20Sri-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rupasri-bakka-524234325/)
+
+[![GitHub](https://img.shields.io/badge/GitHub-rupasribakka-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/rupasribakka)
+
+---
+
+⭐ **If you like this project, don't forget to give it a Star!**
 
 ---
 
