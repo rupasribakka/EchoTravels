@@ -121,8 +121,6 @@ EchoTravels/
 🎓 B.Tech Computer Science & Engineering  
 (Cybersecurity, IoT & Blockchain)
 
----
-
 ## 👩‍💻 Connect with Me
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Rupa%20Sri-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rupasri-bakka-524234325/)
@@ -132,5 +130,3 @@ EchoTravels/
 ---
 
 ⭐ **If you like this project, don't forget to give it a Star!**
-
----
